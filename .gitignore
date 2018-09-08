@@ -1,0 +1,33 @@
+#class files
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# ignore Maven generated target folders
+target
+
+# ignore eclipse files
+*.project
+*.settings
+*.metadata
+*.classpath
+*settings/*
+.project
+.classpath
+.settings
+.metadata
+.DS_Store
+/target
+/.settings
+/.classpath
+/.project
+jira.mapping
+src/main/webapp/WEB-INF/fis.properties
+.eclipse-pmd
+# ignore idea files
+.idea/
+.idea/*
+*.iml
