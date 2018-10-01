@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:user;MODE=MYSQL;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false;DB_CLOSE_ON_EXIT=FALSE;MVCC=true;
+    initialize: true
+    schema: classpath:db/**/schema.sql
+    data: classpath:db/**/data.sql
+
+  jpa:
+    database: h2
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        hbm2ddl:
+          auto: none
+        format_sql: true
+        use_sql_comments: false
+        generate_statistics: false
+        show_sql: true
+        cacheable: false
+        cache:
+          use_query_cache: false
+          use_second_level_cache: false
+          provider_class: org.hibernate.cache.NoCacheProvider
+    show-sql: false
+
+  mvc:
+    locale: en_US

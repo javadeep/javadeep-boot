@@ -77,11 +77,6 @@ public class PageDTO<DTO> {
                 .build();
     }
 
-    /**
-     * Builder构造器
-     *
-     * @param <DTO>
-     */
     public static class Builder<DTO> {
         private long totalRecords = -1;
         private int totalPages = -1;
